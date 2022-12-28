@@ -1,0 +1,19 @@
+// 문제 설명
+// 머쓱이는 행운의 숫자 7을 가장 좋아합니다.
+// 정수 배열 array가 매개변수로 주어질 때, 7이 총 몇 개 있는지 return 하도록 solution 함수를 완성해보세요.
+
+// 입출력         예
+// array	    result
+// [7, 77, 17]	4
+// [10, 29]	    0
+
+//풀이
+
+function solution(array) {
+  var answer = 0;
+  for (let i = 0; i < array.length; i++) {
+    console.log([...("" + array[i])]);
+    answer += [...("" + array[i])].filter((n) => +n === 7).length;
+  }
+  return answer;
+}
