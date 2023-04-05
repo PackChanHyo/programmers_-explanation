@@ -12,7 +12,6 @@
 // 나의 풀이
 
 function solution(n) {
-  var answer = [];
   let arr = Array(n + 1)
     .fill(true)
     .fill(false, 0, 2);
